@@ -36,6 +36,7 @@
 		3FA674481E3E8DF100129D0B /* MenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA674471E3E8DF100129D0B /* MenuState.swift */; };
 		3FA6744A1E3E963400129D0B /* MenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA674491E3E963400129D0B /* MenuReducer.swift */; };
 		3FC119871E428CB8006AF232 /* FlipCardAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC119861E428CB8006AF232 /* FlipCardAction.swift */; };
+		925D60E02578D86D00301AF0 /* FetchTunesThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D60DF2578D86D00301AF0 /* FetchTunesThunk.swift */; };
 		D1651016F32F983625AA0C9E /* Pods_MemoryTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED734A5DA694CA68A25E65BC /* Pods_MemoryTunes.framework */; };
 		D273B743DD9CDB3347E55383 /* Pods_MemoryTunesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69A777CC48AAFB4132D5E48 /* Pods_MemoryTunesTests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		3FC119861E428CB8006AF232 /* FlipCardAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FlipCardAction.swift; sourceTree = "<group>"; tabWidth = 2; };
 		556B017FB4128EA9499D2DE8 /* Pods-MemoryTunesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryTunesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryTunesTests/Pods-MemoryTunesTests.release.xcconfig"; sourceTree = "<group>"; };
 		910A7D01D1033A7FF33CEE39 /* Pods-MemoryTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryTunes/Pods-MemoryTunes.debug.xcconfig"; sourceTree = "<group>"; };
+		925D60DF2578D86D00301AF0 /* FetchTunesThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTunesThunk.swift; sourceTree = "<group>"; };
 		A69A777CC48AAFB4132D5E48 /* Pods_MemoryTunesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryTunesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED734A5DA694CA68A25E65BC /* Pods_MemoryTunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryTunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC5D309E32012CF290EE225 /* Pods-MemoryTunesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryTunesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryTunesTests/Pods-MemoryTunesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				3F257E201E40A30000DF8465 /* RoutingAction.swift */,
 				3F257E2C1E40E51800DF8465 /* ChangeCategoryAction.swift */,
+				925D60DF2578D86D00301AF0 /* FetchTunesThunk.swift */,
 				3F7F97671E427363007C317A /* FetchTunesAction.swift */,
 				3F7F97691E4275ED007C317A /* SetCardsAction.swift */,
 				3FC119861E428CB8006AF232 /* FlipCardAction.swift */,
@@ -433,6 +436,7 @@
 				3F257E2F1E40F8E700DF8465 /* GameState.swift in Sources */,
 				3FA6744A1E3E963400129D0B /* MenuReducer.swift in Sources */,
 				3FA674401E3E87B800129D0B /* AppState.swift in Sources */,
+				925D60E02578D86D00301AF0 /* FetchTunesThunk.swift in Sources */,
 				3F7F976A1E4275ED007C317A /* SetCardsAction.swift in Sources */,
 				3F257E2D1E40E51800DF8465 /* ChangeCategoryAction.swift in Sources */,
 				3F257E1E1E40A2CB00DF8465 /* AppRouter.swift in Sources */,

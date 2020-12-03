@@ -28,27 +28,6 @@
  * THE SOFTWARE.
  */
 import ReSwift
-import ReSwiftThunk
-
-func fetchTunes(state: AppState, store: Store<AppState>) -> FetchTunesAction {
-	
-	iTunesAPI.searchFor(category: state.categoriesState.currentCategorySelected.rawValue) { imageUrls in
-		store.dispatch(SetCardsAction(cardImageUrls: imageUrls))
-	}
-	
-	return FetchTunesAction()
-}
-
-// alternative way, using Thunk
-let fetchTunesThunk = Thunk<AppState> { (dispatch, getState) in
-	dispatch(FetchTunesAction())
-	
-	if let state = getState() {
-		iTunesAPI.searchFor(category: state.categoriesState.currentCategorySelected.rawValue) { imageUrls in
-			dispatch(SetCardsAction(cardImageUrls: imageUrls))
-		}
-	}
-}
 
 struct FetchTunesAction: Action {
 }

@@ -53,9 +53,7 @@ final class GameViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		// 1
-		//store.dispatch(fetchTunes)
 		store.dispatch(fetchTunesThunk)
-		
 		collectionView.delegate = self
 		loadingIndicator.hidesWhenStopped = true
 		
@@ -99,8 +97,6 @@ extension GameViewController: StoreSubscriber {
 		// 2
 		if state.gameFinished {
 			showGameFinishedAlert()
-			
-			//store.dispatch(fetchTunes)
 			store.dispatch(fetchTunesThunk)
 		}
 	}

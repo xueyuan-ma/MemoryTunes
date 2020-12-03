@@ -32,7 +32,6 @@ import ReSwift
 import ReSwiftThunk
 
 let thunksMiddleware: Middleware<AppState> = createThunkMiddleware()
-// var store = Store<AppState>(reducer: appReducer, state: nil)
 var store = Store<AppState>(reducer: appReducer, state: nil, middleware: [thunksMiddleware], automaticallySkipsRepeats: false)
 
 @UIApplicationMain
